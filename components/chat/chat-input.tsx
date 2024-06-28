@@ -48,6 +48,10 @@ export const ChatInput = ({ apiUrl, query, name, type }: ChatInputProps) => {
                 query
             });
 
+            console.log("url: ", url);
+            
+            console.log("values: ", values);
+            
             await axios.post(url, values);
 
             form.reset();
